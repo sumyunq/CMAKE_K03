@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MovePlan</class>
+ <widget class="QDialog" name="MovePlan">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>391</width>
+    <height>281</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <property name="leftMargin">
+    <number>20</number>
+   </property>
+   <property name="topMargin">
+    <number>20</number>
+   </property>
+   <property name="rightMargin">
+    <number>20</number>
+   </property>
+   <property name="bottomMargin">
+    <number>20</number>
+   </property>
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <item row="0" column="0">
+    <widget class="QFrame" name="frame">
+     <property name="minimumSize">
+      <size>
+       <width>351</width>
+       <height>241</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-radius: 16px;
+background-color: #10151D;
+</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>48</x>
+        <y>50</y>
+        <width>303</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>303</width>
+        <height>23</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-family: &quot;Noto Sans S Chinese&quot;; font-weight: 500;
+font-size: 16px;
+color: #A1A8B3;
+background:transparent;
+
+</string>
+      </property>
+      <property name="text">
+       <string>您想将此方案移动到那个分类？</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="NewComboBox" name="cBox_Type">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>48</x>
+        <y>87</y>
+        <width>255</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>255</width>
+        <height>32</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Noto Sans S Chinese Bold</family>
+        <pointsize>-1</pointsize>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="mouseTracking">
+       <bool>true</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QComboBox
+{
+border-radius: 2px;
+combobox-popup: 0;
+border-image: url(:/Skin/Images/cBox/dropdownCollapse_bk.png);
+padding-left: 10px; 
+color: rgb(255, 255, 255);
+
+font-family: &quot;Noto Sans S Chinese Bold&quot;;
+font-size: 12px;
+}
+QComboBox::drop-down
+{
+border-image: url(:/Skin/Images/cBox/selfDroptriangle_no.png);
+margin-top:0px;
+subcontrol-origin: padding;
+subcontrol-position: center right; 
+margin-right:10px;
+height:14px;
+width:11px;
+}
+QComboBox::drop-down:checked
+{
+border-image: url(:/Skin/Images/cBox/selfDroptriangle_se.png);
+margin-top:0px;
+margin-right:10px;
+subcontrol-origin: padding;
+subcontrol-position: center right;
+height:14px;
+width:11px;
+}
+                                        </string>
+      </property>
+      <property name="editable">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pBt_cancle">
+      <property name="geometry">
+       <rect>
+        <x>48</x>
+        <y>171</y>
+        <width>104</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>104</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+	font-family: &quot;Noto Sans S Chinese&quot;; font-weight: 500;
+	font-size: 14px;
+	color: #0091DA;
+
+	background:transparent;
+	border-image: url(:/Skin/Images/Popup/cancel-no.png);
+}
+QPushButton:hover
+{
+	border-image: url(:/Skin/Images/Popup/cancel-ho.png);
+}</string>
+      </property>
+      <property name="text">
+       <string>取消</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pBt_ok">
+      <property name="geometry">
+       <rect>
+        <x>199</x>
+        <y>171</y>
+        <width>104</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>104</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+	font-family: &quot;Noto Sans S Chinese&quot;; font-weight: 500;
+	font-size: 14px;
+	color: #FFFFFF;
+
+	background:transparent;
+	border-image: url(:/Skin/Images/Popup/confirm-no.png);
+}
+QPushButton:hover
+{
+	border-image: url(:/Skin/Images/Popup/confirm-ho.png);
+}</string>
+      </property>
+      <property name="text">
+       <string>确定</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pBt_close">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>10</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>31</width>
+        <height>31</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>31</width>
+        <height>31</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+	border-radius:0px;
+	border-image: url(:/Skin/Images/Popup/close-no.png);
+	background:transparent;
+}
+QPushButton:hover
+{
+	border-image: url(:/Skin/Images/Popup/close-ho.png);
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>NewComboBox</class>
+   <extends>QComboBox</extends>
+   <header>CustomControl/NewComboBox.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

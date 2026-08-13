@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>EqualizerHidden</class>
+ <widget class="QDialog" name="EqualizerHidden">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>302</width>
+    <height>237</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <property name="leftMargin">
+    <number>20</number>
+   </property>
+   <property name="topMargin">
+    <number>20</number>
+   </property>
+   <property name="rightMargin">
+    <number>20</number>
+   </property>
+   <property name="bottomMargin">
+    <number>20</number>
+   </property>
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <item row="0" column="0">
+    <widget class="QFrame" name="frame">
+     <property name="minimumSize">
+      <size>
+       <width>262</width>
+       <height>197</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background: #10151D;
+border-radius: 16px;</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QPushButton" name="pBt_ok">
+      <property name="geometry">
+       <rect>
+        <x>79</x>
+        <y>127</y>
+        <width>104</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>104</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>104</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+	color: rgb(255, 255, 255);
+	border:null;
+	background: #009FEF;
+	border-radius: 15px;
+
+
+}</string>
+      </property>
+      <property name="text">
+       <string>导出方案</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pBt_exit">
+      <property name="geometry">
+       <rect>
+        <x>221</x>
+        <y>10</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>31</width>
+        <height>31</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>31</width>
+        <height>31</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+	border-radius:0px;
+	border-image: url(:/Skin/Images/Popup/close-no.png);
+	background:transparent;
+}
+QPushButton:hover
+{
+	border-image: url(:/Skin/Images/Popup/close-ho.png);
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QWidget" name="widget" native="true">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>42</y>
+        <width>262</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>262</width>
+        <height>23</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;</string>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_4">
+       <property name="spacing">
+        <number>8</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <spacer name="horizontalSpacer_4">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="styleSheet">
+          <string notr="true">color: #A1A8B3;
+font-family: &quot;Noto Sans S Chinese&quot;;
+font-weight: 500;
+font-size: 16px;</string>
+         </property>
+         <property name="text">
+          <string>是否隐藏均衡器</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="lab_hideEqTip">
+         <property name="minimumSize">
+          <size>
+           <width>13</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>13</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background:transparent;
+image: url(:/Skin/Images/homePage/annotation_13_13_2x.png);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_3">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="widget_2" native="true">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>79</y>
+        <width>262</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>262</width>
+        <height>23</height>
+       </size>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <property name="spacing">
+        <number>34</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <spacer name="horizontalSpacer_5">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>38</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="rButton_hide">
+         <property name="styleSheet">
+          <string notr="true">QRadioButton
+{
+	color: #616975;
+	font-family: &quot;Noto Sans S Chinese&quot;;
+	font-weight: 500;
+	font-size: 12px;
+}
+
+/*指示器样式*/
+QRadioButton::indicator
+{
+    height:13px;
+    width:13px;
+	border-image: url(:/Skin/Images/close/radio-no.png);
+    margin-right: 8px;
+}
+/*指示器被选中样式*/
+QRadioButton::indicator:checked 
+{
+	border-image: url(:/Skin/Images/close/radio-se.png);
+}
+/*指示器未选中悬浮样式*/
+QRadioButton::indicator:unchecked:hover
+{
+	border-image: url(:/Skin/Images/close/radio-ho.png);
+}</string>
+         </property>
+         <property name="text">
+          <string>是</string>
+         </property>
+         <property name="checked">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="rButton_show">
+         <property name="styleSheet">
+          <string notr="true">QRadioButton
+{
+	color: #616975;
+	font-family: &quot;Noto Sans S Chinese&quot;; font-weight: 500;
+	font-size: 12px;
+}
+
+/*指示器样式*/
+QRadioButton::indicator
+{
+    height:13px;
+    width:13px;
+
+	border-image: url(:/Skin/Images/close/radio-no.png);
+    margin-right: 8px;
+}
+/*指示器被选中样式*/
+QRadioButton::indicator:checked 
+{
+	border-image: url(:/Skin/Images/close/radio-se.png);
+}
+/*指示器未选中悬浮样式*/
+QRadioButton::indicator:unchecked:hover
+{
+	border-image: url(:/Skin/Images/close/radio-ho.png);
+}</string>
+         </property>
+         <property name="text">
+          <string>否</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_6">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>38</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>UpdateSoftWareFind</class>
+ <widget class="QDialog" name="UpdateSoftWareFind">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>382</width>
+    <height>475</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>16777215</width>
+    <height>16777215</height>
+   </size>
+  </property>
+  <property name="sizeIncrement">
+   <size>
+    <width>0</width>
+    <height>-1</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <property name="leftMargin">
+    <number>20</number>
+   </property>
+   <property name="topMargin">
+    <number>20</number>
+   </property>
+   <property name="rightMargin">
+    <number>20</number>
+   </property>
+   <property name="bottomMargin">
+    <number>20</number>
+   </property>
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <item row="0" column="0">
+    <widget class="QFrame" name="frame">
+     <property name="minimumSize">
+      <size>
+       <width>342</width>
+       <height>435</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>342</width>
+       <height>435</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-radius: 16px;
+background:transparent;
+border-image: url(:/Skin/Images/Popup/update-bk.png);
+</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>224</y>
+        <width>101</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image:none;
+font-family: &quot;Noto Sans S Chinese&quot;;
+font-weight: 500;
+font-size: 14px;
+color: #A1A8B3;</string>
+      </property>
+      <property name="text">
+       <string>更新内容：</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="widget" native="true">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>256</y>
+        <width>342</width>
+        <height>68</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image:none;
+</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <property name="leftMargin">
+        <number>35</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>40</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <item row="0" column="0">
+        <widget class="QTextEdit" name="tEdit_explanation">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QTextEdit {
+	border:none;
+border-image:none;
+	background:transparent;
+	font-family: &quot;Noto Sans S Chinese&quot;;
+	font-weight: 500;
+	font-size: 12px;
+	color: #616975;
+}
+
+QScrollBar:vertical {
+    background: transparent;
+    border: none;              
+border-image:none;
+    width: 6px;
+    margin: 0px;
+    padding: 0px;
+}
+
+QScrollBar::handle:vertical {
+    background-color: rgba(255, 255, 255, 0.1); /* 改用 background-color */
+    border: none;            
+border-image:none;                 
+    border-radius: 3px;
+    min-height: 30px;
+}
+
+QScrollBar::sub-line:vertical,
+QScrollBar::add-line:vertical,
+QScrollBar::add-page:vertical,
+QScrollBar::sub-page:vertical {
+    background: none;
+    border: none;
+border-image:none;
+}
+</string>
+         </property>
+         <property name="verticalScrollBarPolicy">
+          <enum>Qt::ScrollBarAsNeeded</enum>
+         </property>
+         <property name="horizontalScrollBarPolicy">
+          <enum>Qt::ScrollBarAlwaysOff</enum>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+         <property name="html">
+          <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Noto Sans S Chinese'; font-size:12px; font-weight:500; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;1&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;2&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;3&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;4&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;5&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QLabel" name="lab_title">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>164</y>
+        <width>342</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>342</width>
+        <height>23</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image:none;
+font-family: &quot;Noto Sans S Chinese&quot;;
+font-weight: 500;
+font-size: 16px;
+color: #009FEF;</string>
+      </property>
+      <property name="text">
+       <string>发现新版本</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lab_ver">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>187</y>
+        <width>342</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>342</width>
+        <height>17</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image:none;
+font-family: &quot;Noto Sans S Chinese&quot;;
+font-weight: 500;
+font-size: 12px;
+color: #454D57;</string>
+      </property>
+      <property name="text">
+       <string notr="true">v0.2.5</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pBt_exit">
+      <property name="geometry">
+       <rect>
+        <x>301</x>
+        <y>10</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>31</width>
+        <height>31</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>31</width>
+        <height>31</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+	border-radius:0px;
+	border-image: url(:/Skin/Images/Popup/close-no.png);
+	background:transparent;
+}
+QPushButton:hover
+{
+	border-image: url(:/Skin/Images/Popup/close-ho.png);
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>360</y>
+        <width>342</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:none;
+border-image:none;
+background:transparent</string>
+      </property>
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <widget class="QWidget" name="page_btn">
+       <widget class="QPushButton" name="pBt_Ignore">
+        <property name="geometry">
+         <rect>
+          <x>44</x>
+          <y>0</y>
+          <width>104</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>104</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>104</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton
+{
+	font-family: &quot;Noto Sans S Chinese&quot;;
+	 font-weight: 500;
+	font-size: 14px;
+	color: #009FEF;
+
+	background:transparent;
+	border-image: url(:/Skin/Images/Popup/cancel-no.png);
+}
+QPushButton:hover
+{
+	border-image: url(:/Skin/Images/Popup/cancel-ho.png);
+}</string>
+        </property>
+        <property name="text">
+         <string>忽略</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pBt_update">
+        <property name="geometry">
+         <rect>
+          <x>194</x>
+          <y>0</y>
+          <width>104</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>104</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>104</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton
+{
+	font-family: &quot;Noto Sans S Chinese&quot;; font-weight: 500;
+	font-size: 14px;
+	color: #FFFFFF;
+
+	background:transparent;
+	border-image: url(:/Skin/Images/Popup/confirm-no.png);
+}
+QPushButton:hover
+{
+	border-image: url(:/Skin/Images/Popup/confirm-ho.png);
+}</string>
+        </property>
+        <property name="text">
+         <string>立即更新</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_2">
+       <widget class="QSlider" name="progressBar">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>0</y>
+          <width>262</width>
+          <height>8</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>262</width>
+          <height>8</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>262</width>
+          <height>8</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QSlider
+{
+    background: none;
+    border: none;
+}
+/*horizontal ：水平QSlider*/
+QSlider::groove:horizontal {
+	height:8px;
+	border-bottom:4px;
+	background-color: rgba(0, 0, 0, 0.4);
+
+}
+/* 滑块左侧（已填充范围） */
+QSlider::sub-page:horizontal {
+    background-color: #009FEF;               /* 已填充部分的颜色 */
+    border-radius: 4px;                      /* 圆角 */
+}
+/*3.平时滑动的滑块设计参数*/
+QSlider::handle:horizontal {
+	/*滑块的宽度*/
+	width: 0px;
+}
+
+/*4.手动拉动时显示的滑块设计参数*/
+QSlider::handle:horizontal:hover {
+	/*滑块的宽度*/
+	width:0px;
+	
+}</string>
+        </property>
+        <property name="maximum">
+         <number>100</number>
+        </property>
+        <property name="pageStep">
+         <number>1</number>
+        </property>
+        <property name="value">
+         <number>0</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_val">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>8</y>
+          <width>342</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: #616871;
+font-family: &quot;Noto Sans S Chinese&quot;;
+font-weight: 500;
+font-size: 10px;</string>
+        </property>
+        <property name="text">
+         <string>升级中：0%</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

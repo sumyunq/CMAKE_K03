@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>RestartPrompt</class>
+ <widget class="QDialog" name="RestartPrompt">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>440</width>
+    <height>246</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <property name="leftMargin">
+    <number>20</number>
+   </property>
+   <property name="topMargin">
+    <number>20</number>
+   </property>
+   <property name="rightMargin">
+    <number>20</number>
+   </property>
+   <property name="bottomMargin">
+    <number>20</number>
+   </property>
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <item row="0" column="0">
+    <widget class="QFrame" name="frame">
+     <property name="minimumSize">
+      <size>
+       <width>400</width>
+       <height>206</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background: #10151D;
+border-radius: 16px;</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>54</y>
+        <width>400</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>400</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: #A1A8B3;
+font-family: &quot;Noto Sans S Chinese&quot;;
+font-weight: 500;
+font-size: 16px;</string>
+      </property>
+      <property name="text">
+       <string>侦测到APO设定被修正，必须重启电脑才能生效</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>80</y>
+        <width>400</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>400</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgba(161, 168, 179, 0.5);
+font-family: &quot;Noto Sans S Chinese&quot;;
+font-weight: 500;
+font-size: 16px;</string>
+      </property>
+      <property name="text">
+       <string>是否立即重启</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pBt_Restart">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>150</y>
+        <width>104</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>104</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>104</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+	font-family: &quot;Noto Sans S Chinese&quot;; font-weight: 500;
+	font-size: 14px;
+	color: #FFFFFF;
+
+	background:transparent;
+	border-image: url(:/Skin/Images/Popup/confirm-no.png);
+}
+QPushButton:hover
+{
+	border-image: url(:/Skin/Images/Popup/confirm-ho.png);
+}</string>
+      </property>
+      <property name="text">
+       <string>重启</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pBt_Cancel">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>150</y>
+        <width>104</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>104</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>104</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+	font-family: &quot;Noto Sans S Chinese&quot;;
+	 font-weight: 500;
+	font-size: 14px;
+	color: #009FEF;
+
+	background:transparent;
+	border-image: url(:/Skin/Images/Popup/cancel-no.png);
+}
+QPushButton:hover
+{
+	border-image: url(:/Skin/Images/Popup/cancel-ho.png);
+}</string>
+      </property>
+      <property name="text">
+       <string>取消</string>
+      </property>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

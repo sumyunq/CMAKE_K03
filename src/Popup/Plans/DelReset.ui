@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DelReset</class>
+ <widget class="QWidget" name="DelReset">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>391</width>
+    <height>281</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <property name="leftMargin">
+    <number>20</number>
+   </property>
+   <property name="topMargin">
+    <number>20</number>
+   </property>
+   <property name="rightMargin">
+    <number>20</number>
+   </property>
+   <property name="bottomMargin">
+    <number>20</number>
+   </property>
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <item row="0" column="0">
+    <widget class="QFrame" name="frame">
+     <property name="minimumSize">
+      <size>
+       <width>351</width>
+       <height>241</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>351</width>
+       <height>241</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: #10151D;
+border-radius:16px;</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QPushButton" name="pBt_exit">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>10</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>31</width>
+        <height>31</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>31</width>
+        <height>31</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+	border-radius:0px;
+	border-image: url(:/Skin/Images/Popup/close-no.png);
+	background:transparent;
+}
+QPushButton:hover
+{
+	border-image: url(:/Skin/Images/Popup/close-ho.png);
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lab_1">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>50</y>
+        <width>351</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>51</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>21</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: #A1A8B3;
+font-family: &quot;Noto Sans S Chinese&quot;; font-weight: 500;
+font-size: 16px;
+background-color:transparent;
+</string>
+      </property>
+      <property name="text">
+       <string>确认删除此方案吗？</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lab_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>92</y>
+        <width>351</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: #616975;
+font-family: &quot;Noto Sans S Chinese&quot;; font-weight: 500;
+font-size: 14px;
+background-color:transparent;
+</string>
+      </property>
+      <property name="text">
+       <string>方案删除后无法恢复，请谨慎操作。</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pBt_ok">
+      <property name="geometry">
+       <rect>
+        <x>199</x>
+        <y>171</y>
+        <width>104</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>104</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>104</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+	font-family: &quot;Noto Sans S Chinese&quot;; font-weight: 500;
+	font-size: 14px;
+	color: #FFFFFF;
+
+	background:transparent;
+	border-image: url(:/Skin/Images/Popup/confirm-no.png);
+}
+QPushButton:hover
+{
+	border-image: url(:/Skin/Images/Popup/confirm-ho.png);
+}</string>
+      </property>
+      <property name="text">
+       <string>删除</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pBt_close">
+      <property name="geometry">
+       <rect>
+        <x>48</x>
+        <y>171</y>
+        <width>104</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>104</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>104</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+	font-family: &quot;Noto Sans S Chinese&quot;; font-weight: 500;
+	font-size: 14px;
+	color: #0091DA;
+
+	background:transparent;
+	border-image: url(:/Skin/Images/Popup/cancel-no.png);
+}
+QPushButton:hover
+{
+	border-image: url(:/Skin/Images/Popup/cancel-ho.png);
+}</string>
+      </property>
+      <property name="text">
+       <string>取消</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lab_del_warn">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>111</y>
+        <width>351</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: #616975;
+font-family: &quot;Noto Sans S Chinese&quot;; font-weight: 500;
+font-size: 14px;
+background-color:transparent;
+</string>
+      </property>
+      <property name="text">
+       <string>所勾选的系统方案将不会被删除。</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

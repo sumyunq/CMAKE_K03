@@ -1,0 +1,1097 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>KeySelfSet</class>
+ <widget class="QWidget" name="KeySelfSet">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>535</width>
+    <height>520</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">border-image:null;
+border-color: rgb(49, 60, 77);
+background-color: rgb(49, 60, 77);</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <property name="horizontalSpacing">
+    <number>6</number>
+   </property>
+   <property name="verticalSpacing">
+    <number>20</number>
+   </property>
+   <item row="0" column="0">
+    <widget class="QWidget" name="widget" native="true">
+     <layout class="QGridLayout" name="gridLayout_4">
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <item row="0" column="0">
+       <widget class="QWidget" name="widget_4" native="true">
+        <property name="minimumSize">
+         <size>
+          <width>341</width>
+          <height>76</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>76</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-bottom:3px solid rgb(69, 77, 91)</string>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <property name="leftMargin">
+          <number>31</number>
+         </property>
+         <property name="topMargin">
+          <number>24</number>
+         </property>
+         <property name="rightMargin">
+          <number>26</number>
+         </property>
+         <property name="bottomMargin">
+          <number>24</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="label_6">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>168</horstretch>
+             <verstretch>26</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>23</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>23</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Noto Sans S Chinese Bold</family>
+             <pointsize>-1</pointsize>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;
+font-family: &quot;Noto Sans S Chinese Bold&quot; ;
+font-size: 16px;
+color: #FFFFFF;
+
+</string>
+           </property>
+           <property name="text">
+            <string>按键自定义</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pBt_reset">
+           <property name="minimumSize">
+            <size>
+             <width>104</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>104</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton
+{
+	font-family: &quot;Noto Sans S Chinese Bold&quot; ;
+	font-size: 14px;
+	color: rgb(255, 255, 255);
+	border:null;
+	border-image: url(:/Skin/Images/SelfSet/btn-no.png);
+}
+QPushButton::hover
+{
+	border-image: url(:/Skin/Images/SelfSet/btn-hover.png);
+	color: rgb(175, 175, 175);
+}</string>
+           </property>
+           <property name="text">
+            <string>恢复默认</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QWidget" name="widget_3" native="true">
+        <layout class="QGridLayout" name="gridLayout_2">
+         <property name="leftMargin">
+          <number>31</number>
+         </property>
+         <property name="rightMargin">
+          <number>26</number>
+         </property>
+         <item row="2" column="1">
+          <widget class="NewComboBox" name="cBox_EQKey">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>71</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="mouseTracking">
+            <bool>true</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QComboBox
+{
+	combobox-popup: 0;/*确保在非编辑模式下，下拉列表框的位置改变*/
+	border-image: url(:/Skin/Images/cBox/dropdownCollapse_bk.png);
+
+	padding-left: 10px; /* 为图标留出空间 */
+	color: rgb(255, 255, 255);
+	font-family: &quot;Noto Sans S Chinese&quot;; font-weight: 500;
+	font-size: 14px;
+}
+/*下拉箭头按钮样式-未选中*/
+QComboBox::drop-down
+{
+	border-image: url(:/Skin/Images/cBox/selfDroptriangle_no.png);
+	margin-top:9px;
+	margin-right:10px;
+	height:14px;
+	width:11px;
+	
+}
+/*下拉箭头按钮样式-选中*/
+QComboBox::drop-down:checked{
+	border-image: url(:/Skin/Images/cBox/selfDroptriangle_se.png);
+	margin-top:9px;
+	margin-right:10px;
+	height:14px;
+	width:11px;
+}</string>
+           </property>
+           <property name="editable">
+            <bool>false</bool>
+           </property>
+           <item>
+            <property name="text">
+             <string>按键1</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>按键2</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>按键3</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item row="0" column="3">
+          <widget class="NewComboBox" name="cBox_muteAct">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>71</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="mouseTracking">
+            <bool>true</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QComboBox
+{
+	combobox-popup: 0;/*确保在非编辑模式下，下拉列表框的位置改变*/
+	border-image: url(:/Skin/Images/cBox/dropdownCollapse_bk.png);
+
+	padding-left: 10px; /* 为图标留出空间 */
+	color: rgb(255, 255, 255);
+	font-family: &quot;Noto Sans S Chinese&quot;; font-weight: 500;
+	font-size: 14px;
+}
+/*下拉箭头按钮样式-未选中*/
+QComboBox::drop-down
+{
+	border-image: url(:/Skin/Images/cBox/selfDroptriangle_no.png);
+	margin-top:9px;
+	margin-right:10px;
+	height:14px;
+	width:11px;
+	
+}
+/*下拉箭头按钮样式-选中*/
+QComboBox::drop-down:checked{
+	border-image: url(:/Skin/Images/cBox/selfDroptriangle_se.png);
+	margin-top:9px;
+	margin-right:10px;
+	height:14px;
+	width:11px;
+}</string>
+           </property>
+           <property name="editable">
+            <bool>false</bool>
+           </property>
+           <item>
+            <property name="text">
+             <string>单击</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>双击</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>三击</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>四击</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>五击</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>长按</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>超长按</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>极长按</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item row="1" column="2">
+          <spacer name="horizontalSpacer_10">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Fixed</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="1" column="3">
+          <widget class="NewComboBox" name="cBox_playAct">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>71</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="mouseTracking">
+            <bool>true</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QComboBox
+{
+	combobox-popup: 0;/*确保在非编辑模式下，下拉列表框的位置改变*/
+	border-image: url(:/Skin/Images/cBox/dropdownCollapse_bk.png);
+
+	padding-left: 10px; /* 为图标留出空间 */
+	color: rgb(255, 255, 255);
+	font-family: &quot;Noto Sans S Chinese&quot;; font-weight: 500;
+	font-size: 14px;
+}
+/*下拉箭头按钮样式-未选中*/
+QComboBox::drop-down
+{
+	border-image: url(:/Skin/Images/cBox/selfDroptriangle_no.png);
+	margin-top:9px;
+	margin-right:10px;
+	height:14px;
+	width:11px;
+	
+}
+/*下拉箭头按钮样式-选中*/
+QComboBox::drop-down:checked{
+	border-image: url(:/Skin/Images/cBox/selfDroptriangle_se.png);
+	margin-top:9px;
+	margin-right:10px;
+	height:14px;
+	width:11px;
+}</string>
+           </property>
+           <property name="editable">
+            <bool>false</bool>
+           </property>
+           <property name="currentIndex">
+            <number>1</number>
+           </property>
+           <item>
+            <property name="text">
+             <string>单击</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>双击</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>三击</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>四击</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>五击</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>长按</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>超长按</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>极长按</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <spacer name="verticalSpacer">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Fixed</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>50</width>
+             <height>30</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="2" column="3">
+          <widget class="NewComboBox" name="cBox_EQAct">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>71</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="mouseTracking">
+            <bool>true</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QComboBox
+{
+	combobox-popup: 0;/*确保在非编辑模式下，下拉列表框的位置改变*/
+	border-image: url(:/Skin/Images/cBox/dropdownCollapse_bk.png);
+
+	padding-left: 10px; /* 为图标留出空间 */
+	color: rgb(255, 255, 255);
+	font-family: &quot;Noto Sans S Chinese&quot;; font-weight: 500;
+	font-size: 14px;
+}
+/*下拉箭头按钮样式-未选中*/
+QComboBox::drop-down
+{
+	border-image: url(:/Skin/Images/cBox/selfDroptriangle_no.png);
+	margin-top:9px;
+	margin-right:10px;
+	height:14px;
+	width:11px;
+	
+}
+/*下拉箭头按钮样式-选中*/
+QComboBox::drop-down:checked{
+	border-image: url(:/Skin/Images/cBox/selfDroptriangle_se.png);
+	margin-top:9px;
+	margin-right:10px;
+	height:14px;
+	width:11px;
+}</string>
+           </property>
+           <property name="editable">
+            <bool>false</bool>
+           </property>
+           <property name="currentIndex">
+            <number>2</number>
+           </property>
+           <item>
+            <property name="text">
+             <string>单击</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>双击</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>三击</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>四击</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>五击</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>长按</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>超长按</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>极长按</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="NewComboBox" name="cBox_muteKey">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>71</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="mouseTracking">
+            <bool>true</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QComboBox
+{
+	combobox-popup: 0;/*确保在非编辑模式下，下拉列表框的位置改变*/
+	border-image: url(:/Skin/Images/cBox/dropdownCollapse_bk.png);
+
+	padding-left: 10px; /* 为图标留出空间 */
+	color: rgb(255, 255, 255);
+	font-family: &quot;Noto Sans S Chinese&quot;; font-weight: 500;
+	font-size: 14px;
+}
+/*下拉箭头按钮样式-未选中*/
+QComboBox::drop-down
+{
+	border-image: url(:/Skin/Images/cBox/selfDroptriangle_no.png);
+	margin-top:9px;
+	margin-right:10px;
+	height:14px;
+	width:11px;
+	
+}
+/*下拉箭头按钮样式-选中*/
+QComboBox::drop-down:checked{
+	border-image: url(:/Skin/Images/cBox/selfDroptriangle_se.png);
+	margin-top:9px;
+	margin-right:10px;
+	height:14px;
+	width:11px;
+}</string>
+           </property>
+           <property name="editable">
+            <bool>false</bool>
+           </property>
+           <item>
+            <property name="text">
+             <string>按键1</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>按键2</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>按键3</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="NewComboBox" name="cBox_playKey">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>71</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="mouseTracking">
+            <bool>true</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QComboBox
+{
+	combobox-popup: 0;/*确保在非编辑模式下，下拉列表框的位置改变*/
+	border-image: url(:/Skin/Images/cBox/dropdownCollapse_bk.png);
+
+	padding-left: 10px; /* 为图标留出空间 */
+	color: rgb(255, 255, 255);
+	font-family: &quot;Noto Sans S Chinese&quot;; font-weight: 500;
+	font-size: 14px;
+}
+/*下拉箭头按钮样式-未选中*/
+QComboBox::drop-down
+{
+	border-image: url(:/Skin/Images/cBox/selfDroptriangle_no.png);
+	margin-top:9px;
+	margin-right:10px;
+	height:14px;
+	width:11px;
+	
+}
+/*下拉箭头按钮样式-选中*/
+QComboBox::drop-down:checked{
+	border-image: url(:/Skin/Images/cBox/selfDroptriangle_se.png);
+	margin-top:9px;
+	margin-right:10px;
+	height:14px;
+	width:11px;
+}</string>
+           </property>
+           <property name="editable">
+            <bool>false</bool>
+           </property>
+           <item>
+            <property name="text">
+             <string>按键1</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>按键2</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>按键3</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="label">
+           <property name="styleSheet">
+            <string notr="true">font-family: &quot;Noto Sans S Chinese&quot;; font-weight: 500;
+font-size: 14px;
+color: #A1A6AD;
+
+
+</string>
+           </property>
+           <property name="text">
+            <string>静音</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_2">
+           <property name="styleSheet">
+            <string notr="true">font-family: &quot;Noto Sans S Chinese&quot;; font-weight: 500;
+font-size: 14px;
+color: #A1A6AD;</string>
+           </property>
+           <property name="text">
+            <string>播放/暂停</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_3">
+           <property name="styleSheet">
+            <string notr="true">font-family: &quot;Noto Sans S Chinese&quot;; font-weight: 500;
+font-size: 14px;
+color: #A1A6AD;</string>
+           </property>
+           <property name="text">
+            <string>EQ切换</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QWidget" name="widget_Beep" native="true">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>250</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>250</height>
+      </size>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_3">
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <item row="0" column="0">
+       <widget class="QWidget" name="widget_top" native="true">
+        <property name="minimumSize">
+         <size>
+          <width>341</width>
+          <height>76</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>76</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-bottom:3px solid rgb(69, 77, 91)</string>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <property name="leftMargin">
+          <number>31</number>
+         </property>
+         <property name="topMargin">
+          <number>24</number>
+         </property>
+         <property name="rightMargin">
+          <number>26</number>
+         </property>
+         <property name="bottomMargin">
+          <number>24</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="label_10">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>23</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>23</height>
+            </size>
+           </property>
+           <property name="sizeIncrement">
+            <size>
+             <width>150</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Noto Sans S Chinese Bold</family>
+             <pointsize>-1</pointsize>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:none;
+font-family: &quot;Noto Sans S Chinese Bold&quot; ;
+font-size: 16px;
+color: #FFFFFF;
+</string>
+           </property>
+           <property name="text">
+            <string>提示音</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pBt_BeepSwitch">
+           <property name="minimumSize">
+            <size>
+             <width>45</width>
+             <height>21</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>45</width>
+             <height>21</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QWidget" name="widget_6" native="true">
+        <property name="minimumSize">
+         <size>
+          <width>341</width>
+          <height>50</height>
+         </size>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_5">
+         <property name="leftMargin">
+          <number>31</number>
+         </property>
+         <property name="rightMargin">
+          <number>26</number>
+         </property>
+         <item row="0" column="2">
+          <widget class="QLabel" name="lab_v30_2">
+           <property name="minimumSize">
+            <size>
+             <width>35</width>
+             <height>25</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>35</width>
+             <height>25</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(39, 48, 62);
+color: rgb(255, 255, 255);
+font-family: &quot;Noto Sans S Chinese&quot;; font-weight: 500;
+font-size: 14px;</string>
+           </property>
+           <property name="text">
+            <string>0</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0" colspan="2">
+          <widget class="NewHSlider" name="hSlider_level">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>135</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QSlider
+{
+    background: none;
+    border: none;
+}
+/*horizontal ：水平QSlider*/
+QSlider::groove:horizontal {
+	height:10px;
+	border-bottom:5px;
+
+}
+/*3.平时滑动的滑块设计参数*/
+QSlider::handle:horizontal {
+	/*滑块的宽度*/
+	width: 12px;
+	margin-left:-1px;
+	margin-right:-2px;
+	 /*上遮住区域高度*/
+	margin-top:-8px;
+	 /*下遮住区域高度*/
+	margin-bottom:-8px;
+
+	border-image: url(:/Skin/Images/Slider/Thumb.png);
+}
+
+/*4.手动拉动时显示的滑块设计参数*/
+QSlider::handle:horizontal:hover {
+	/*滑块的宽度*/
+	width:12px;
+	 /*上遮住区域高度*/
+	margin-top:-8px;
+	 /*下遮住区域高度*/
+	margin-bottom:-8px;
+	border-image: url(:/Skin/Images/Slider/Thumb.png);
+}</string>
+           </property>
+           <property name="maximum">
+            <number>16</number>
+           </property>
+           <property name="singleStep">
+            <number>1</number>
+           </property>
+           <property name="pageStep">
+            <number>1</number>
+           </property>
+           <property name="value">
+            <number>5</number>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0" colspan="3">
+          <widget class="QWidget" name="widget_7" native="true">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>40</height>
+            </size>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_3">
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QLabel" name="label_4">
+              <property name="styleSheet">
+               <string notr="true">font-family: &quot;Noto Sans S Chinese&quot;; font-weight: 500;
+font-size: 14px;
+color: #A1A6AD;
+
+</string>
+              </property>
+              <property name="text">
+               <string>提示音语言</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="NewComboBox" name="cBox_beepLanguage">
+              <property name="enabled">
+               <bool>true</bool>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>128</width>
+                <height>32</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>130</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="mouseTracking">
+               <bool>true</bool>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QComboBox
+{
+	combobox-popup: 0;/*确保在非编辑模式下，下拉列表框的位置改变*/
+	border-image: url(:/Skin/Images/cBox/dropdownCollapse_bk.png);
+
+	padding-left: 10px; /* 为图标留出空间 */
+	color: rgb(255, 255, 255);
+	font-family: &quot;Noto Sans S Chinese&quot;; font-weight: 500;
+	font-size: 14px;
+}
+/*下拉箭头按钮样式-未选中*/
+QComboBox::drop-down
+{
+	border-image: url(:/Skin/Images/cBox/selfDroptriangle_no.png);
+	margin-top:9px;
+	margin-right:10px;
+	height:14px;
+	width:11px;
+	
+}
+/*下拉箭头按钮样式-选中*/
+QComboBox::drop-down:checked{
+	border-image: url(:/Skin/Images/cBox/selfDroptriangle_se.png);
+	margin-top:9px;
+	margin-right:10px;
+	height:14px;
+	width:11px;
+}</string>
+              </property>
+              <property name="editable">
+               <bool>false</bool>
+              </property>
+              <item>
+               <property name="text">
+                <string>中文</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>英文</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>NewHSlider</class>
+   <extends>QSlider</extends>
+   <header>CustomControl/CustomSlider/NewHSlider.h</header>
+  </customwidget>
+  <customwidget>
+   <class>NewComboBox</class>
+   <extends>QComboBox</extends>
+   <header>CustomControl/NewComboBox.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

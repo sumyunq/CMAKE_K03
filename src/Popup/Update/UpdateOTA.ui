@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>UpdateOTA</class>
+ <widget class="QDialog" name="UpdateOTA">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>382</width>
+    <height>249</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <property name="leftMargin">
+    <number>20</number>
+   </property>
+   <property name="topMargin">
+    <number>20</number>
+   </property>
+   <property name="rightMargin">
+    <number>20</number>
+   </property>
+   <property name="bottomMargin">
+    <number>20</number>
+   </property>
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <item row="0" column="0">
+    <widget class="QFrame" name="frame">
+     <property name="minimumSize">
+      <size>
+       <width>342</width>
+       <height>209</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>342</width>
+       <height>209</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-radius: 16px;
+background-color:#10151D;</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="label_val">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>150</y>
+        <width>342</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: #616871;
+font-family: &quot;Noto Sans S Chinese&quot;;
+font-weight: 500;
+font-size: 10px;</string>
+      </property>
+      <property name="text">
+       <string>升级中：0%</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QSlider" name="progressBar">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>134</y>
+        <width>262</width>
+        <height>8</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>262</width>
+        <height>8</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>262</width>
+        <height>8</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">/*QSlider
+{
+	border-image:NULL;
+	border-radius:2px;
+}
+
+QSlider::groove:horizontal {
+	border: 0px solid #bbb;
+	height:3px;
+	border-image: url(:/Skin/Images/more/slider-empty.png);
+	border-radius:2px;
+}
+
+QSlider::sub-page:horizontal {
+	border: 0px solid #777;
+	border-image: url(:/Skin/Images/more/slider-full.png);
+	margin-left:0px;
+}
+
+QSlider::add-page:horizontal {
+
+	border: 0px solid #777;
+
+	border-radius: 2px;
+}
+
+QSlider::handle:horizontal {
+	
+	width: 0px;
+	
+}
+
+
+QSlider::handle:horizontal:hover {
+
+width: 0px;
+}*/
+
+
+
+QSlider
+{
+    background: none;
+    border: none;
+}
+/*horizontal ：水平QSlider*/
+QSlider::groove:horizontal {
+	height:8px;
+	border-bottom:4px;
+	background-color: rgba(0, 0, 0, 0.4);
+
+}
+/* 滑块左侧（已填充范围） */
+QSlider::sub-page:horizontal {
+    background-color: #009FEF;               /* 已填充部分的颜色 */
+    border-radius: 4px;                      /* 圆角 */
+}
+/*3.平时滑动的滑块设计参数*/
+QSlider::handle:horizontal {
+	/*滑块的宽度*/
+	width: 0px;
+}
+
+/*4.手动拉动时显示的滑块设计参数*/
+QSlider::handle:horizontal:hover {
+	/*滑块的宽度*/
+	width:0px;
+	
+}</string>
+      </property>
+      <property name="maximum">
+       <number>100</number>
+      </property>
+      <property name="pageStep">
+       <number>1</number>
+      </property>
+      <property name="value">
+       <number>0</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lab_title">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>47</y>
+        <width>342</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: #A1A8B3;
+font-family: &quot;Noto Sans S Chinese&quot;;
+font-weight:500;
+font-size: 16px;</string>
+      </property>
+      <property name="text">
+       <string>固件升级</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lab_ver">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>70</y>
+        <width>342</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: #454D57;
+font-family: &quot;Noto Sans S Chinese&quot;;
+font-weight: 500;
+font-size: 12px;</string>
+      </property>
+      <property name="text">
+       <string>v</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

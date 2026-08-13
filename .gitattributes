@@ -1,0 +1,7 @@
+# 统一行尾策略：文本文件按 autocrlf 规范化
+* text=auto
+
+# Qt Designer 在 Windows 上保存 CRLF，固定 eol=crlf 避免 Designer 保存产生整文件假 diff
+*.ui text eol=crlf
+*.ts text eol=crlf
+*.qrc text eol=crlf

@@ -1,0 +1,41 @@
+/* 应用资源脚本模板：configure_file 后由 CMake 编译进 exe
+   图标路径用绝对路径注入，避免 rc 编译器的工作目录问题（MSVC/MinGW 通用）
+   注意：windres 不支持 // 注释，统一用块注释；
+   常量全部用数字字面量，避免依赖 windows.h 的 SDK include 路径 */
+#ifndef __GNUC__
+#pragma code_page(65001)
+#endif
+
+IDI_ICON1 ICON "@CMAKE_CURRENT_SOURCE_DIR@/resources/Skin/Images/Tool.ico"
+
+VS_VERSION_INFO VERSIONINFO
+        FILEVERSION 1,0,0,0
+        PRODUCTVERSION 1,0,0,0
+        FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+        FILEFLAGS 0x1L          /* VS_FF_DEBUG */
+#else
+        FILEFLAGS 0x0L
+#endif
+        FILEOS 0x40004L         /* VOS__WINDOWS32 */
+        FILETYPE 0x1L           /* VFT_APP */
+        FILESUBTYPE 0x0L
+        BEGIN
+                BLOCK "StringFileInfo"
+                BEGIN
+                        BLOCK "040904b0"
+                        BEGIN
+                                VALUE "CompanyName", "东莞市德声实业有限公司\0"
+                                VALUE "FileDescription", "XIBERIA X HUB\0"
+                                VALUE "FileVersion", "1.0.0.0\0"
+                                VALUE "ProductName", "XIBERIA X HUB\0"
+                                VALUE "ProductVersion", "1.0.0.0\0"
+                                VALUE "LegalCopyright", "@2016\0"
+                                VALUE "OriginalFilename", "@PROJECT_NAME@.exe\0"
+                        END
+                END
+                BLOCK "VarFileInfo"
+                BEGIN
+                        VALUE "Translation", 0x0409, 1200
+                END
+        END

@@ -1,0 +1,40 @@
+# 构建产物
+build/
+out/
+release/
+debug/
+Makefile
+Makefile.*
+*.o
+*.obj
+*.pdb
+*.ilk
+*.exp
+*.lib
+*.exe
+
+# 第三方库二进制随仓库走（链接 vlc/ffmpeg 的 lib，运行需 DLL）
+!third_party_library/**/
+!third_party_library/**/*.exe
+!third_party_library/**/*.lib
+
+# uic 生成头（项目根为 UI_DIR）
+/ui_*.h
+
+# IDE
+.vs/
+.qtcreator/
+*.user
+
+# 个人/暂存
+.claude/settings.local.json
+.superpowers/
+
+# 备份/日志/临时
+*.bak
+*.bak2
+*.tmp
+*.tmp.*
+*.log
+
+# 翻译编译产物由 res.qrc 引用，需提交：translations/*.qm 保留
