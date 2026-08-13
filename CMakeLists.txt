@@ -20,6 +20,8 @@ if(MSVC)
     # 设置语言为英文
     add_compile_options(/diagnostics:caret)
     add_compile_options(/utf-8)
+    # 串行化 PDB 写入，避免并行编译时 C1090（PDB API 调用失败，常为杀毒/占用/并发写冲突）
+    add_compile_options(/FS)
 endif()
 
 # Windows Unicode（MoreSet.h 等使用 taskschd.h/Lmcons.h 等 Windows SDK 头，qmake 项目默认定义）
